@@ -1,0 +1,103 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('assets/img/logo_preview.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("assets/img/logo_preview.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("assets/img/logo_preview.jpg");
+    min-height: 400px;
+}
+.customIcon{
+    width:15%;
+    height:15%;
+    padding-right: 2px;
+    vertical-align:center;
+}
+.customIconS{
+    width:7%;
+    height:7%;
+    padding-right: 2px;
+    vertical-align:center;
+}
+.customIconC{
+    width:3%;
+    height:3%;
+    padding-right: 2px;
+    vertical-align:center;
+}
+.customIconU{
+    width:4%;
+    height:4%;
+    padding-right: 2px;
+    vertical-align:center;
+}
+.conectionsA{
+	color: rgb(99, 99, 99);
+	background-color: #dfdbdb;
+    border: 1px solid #dfdbdb;
+    border-radius: 5%;
+    display: block;
+	padding: 5px;
+	margin-left: 10px;
+	text-align: center;	
+	font-size: 10pt;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+
+}
+.conectionsA:hover{
+	border: 1px solid #8d8d8d;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 2px 2px 0 rgba(0,0,0,0.19);
+	color: black;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+  }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    align-items: center;
+  }
